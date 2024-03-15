@@ -1,14 +1,20 @@
-﻿using Scripts.Infrastructure;
+﻿using Scripts.Utilities;
+using Scripts.UI.Common.StateViewers;
 
 namespace Scripts.Infrastructure
 {
     public class Game
     {
-        private GameStateMachine _gameStateMachine;
+        private readonly GameStateMachine _gameStateMachine;
 
-        public Game()
+        public Game(IStateViewer loadCurtain, ICoroutineRunner coroutineRunner)
         {
-            _gameStateMachine = new GameStateMachine();
+            _gameStateMachine = new GameStateMachine(loadCurtain, coroutineRunner);
+        }
+
+        public void Start()
+        {
+            _gameStateMachine.Start();
         }
     }
 }
