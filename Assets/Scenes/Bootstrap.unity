@@ -256,6 +256,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034685435182475091, guid: 0857f923539c92d48a88245898c279a5, type: 3}
+      propertyPath: _canvasGroup
+      value: 
+      objectReference: {fileID: 1872183174}
     - target: {fileID: 8391769236579835596, guid: 0857f923539c92d48a88245898c279a5, type: 3}
       propertyPath: m_Name
       value: Canvas_LoadCurtain
@@ -276,6 +280,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f40c302dc532964fb1b506868d3ab50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &1872183174 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 2308281519910134256, guid: 0857f923539c92d48a88245898c279a5, type: 3}
+  m_PrefabInstance: {fileID: 1872183172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

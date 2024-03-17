@@ -19,8 +19,8 @@ namespace Scripts.Infrastructure.States
 
         public void Enter()
         {
-            _loadCurtain.Enable();
             _loadLevelService.Load(_levelName, Exit);
+            _loadCurtain.Enable();
         }
 
         public void Exit()

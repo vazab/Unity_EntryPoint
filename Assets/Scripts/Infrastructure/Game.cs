@@ -16,5 +16,6 @@ namespace Scripts.Infrastructure
         {
             _gameStateMachine.Start();
         }
+        
     }
 }
